@@ -1,0 +1,13 @@
+# Configuration Netlify pour Trend Pulse — Healthy Lifestyle
+# Fichier optionnel : Netlify detecte automatiquement Vite si ce fichier est absent.
+# Il est conserve ici pour figer la version de Node et le dossier de publication.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Les en-tetes HTTP reels sont definis dans public/_headers
+# (format partage par Netlify et Cloudflare Pages).
